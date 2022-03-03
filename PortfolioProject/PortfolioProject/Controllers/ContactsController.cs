@@ -26,7 +26,7 @@ public class ContactsController : Controller
             var message = new Message(new string[] { "japanlover1337@gmail.com" }, "Users Data",
                 $"Email:{userData.Email}\nName:{userData.Name}\nSubject:{userData.Subject}\nMessage:\n{userData.Message}");
             await EmailSender.SendEmailAsync(message);
-            return RedirectToAction("Index", "Home");
+            return Ok();
 
     }
 }
