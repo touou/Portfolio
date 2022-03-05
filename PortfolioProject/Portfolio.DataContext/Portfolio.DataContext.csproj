@@ -1,16 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Portfolio.DataContext\Portfolio.DataContext.csproj" />
-      <ProjectReference Include="..\Portfolio.Entity\Portfolio.Entity.csproj" />
-      <ProjectReference Include="..\Portfolio.Misc\Portfolio.Misc.csproj" />
-    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.1.22076.6" />
@@ -18,8 +12,11 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
-      <PackageReference Include="NETCore.MailKit" Version="2.0.3" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0-preview.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Portfolio.Entitys\Portfolio.Entitys.csproj" />
     </ItemGroup>
 
 </Project>

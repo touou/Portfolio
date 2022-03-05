@@ -1,4 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using Portfolio.DataContext;
 using Portfolio.Misc.Services.EmailSender;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +11,10 @@ builder.Services.AddSingleton(builder.Configuration.
     GetSection("EmailConfiguration").Get<EmailConfiguration>());
 
 builder.Services.AddScoped<IEmailService, EmailService>();
+
+builder.Services.AddDbContext<ApplicationContext>(option =>
+    option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.AddControllersWithViews();
 
