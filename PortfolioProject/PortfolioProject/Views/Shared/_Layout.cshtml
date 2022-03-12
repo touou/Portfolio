@@ -35,12 +35,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">STANLEY</a>
+      <a class="navbar-brand" asp-controller="Home" asp-action="Index">STANLEY</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
+        @if (!User.Identity.IsAuthenticated)
+        {
+          <li><a asp-controller="Auth" asp-action="Login">Login</a></li>
+          <li><a asp-controller="Auth" asp-action="Register">Register</a></li>
+        }
+        else
+        {
+          <li><a asp-controller="Contacts" asp-action="Contacts">@User.Identity.Name</a></li>
+          <li><form class="form-inline" asp-controller="Auth" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                            </form></li>
+        }
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>

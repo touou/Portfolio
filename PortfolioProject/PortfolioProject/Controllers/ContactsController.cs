@@ -25,7 +25,7 @@ public class ContactsController : Controller
     }
 
     [HttpPost]
-    public  IActionResult Contacts([FromForm] User userData)
+    public async Task<IActionResult> Contacts([FromForm] Models.User userData)
     {
         _ApplicationContext.Requests.Add(new Request
         {
@@ -35,11 +35,11 @@ public class ContactsController : Controller
             Subject = userData.Subject,
             Message = userData.Message,
         });
-        _ApplicationContext.SaveChanges();
+        await _ApplicationContext.SaveChangesAsync();
         
         var message = new Message(new string[] { "japanlover1337@gmail.com" }, "Users Data",
                 $"Email:{userData.Email}\nName:{userData.Name}\nSubject:{userData.Subject}\nMessage:\n{userData.Message}");
-            EmailSender.SendEmailAsync(message);
-            return Ok();
+        await EmailSender.SendEmailAsync(message);
+             return Ok();
     }
 }

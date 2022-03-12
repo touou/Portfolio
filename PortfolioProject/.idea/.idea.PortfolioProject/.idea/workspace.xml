@@ -7,15 +7,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d83e235c-fce5-4416-a909-0099aa2273e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PortfolioProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortfolioProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.DataContext/ApplicationContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.DataContext/ApplicationContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.DataContext/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.DataContext/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.DataContext/Portfolio.DataContext.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.DataContext/Portfolio.DataContext.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio.Entitys/Portfolio.Entitys.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.Entitys/Portfolio.Entitys.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio.Misc/Portfolio.Misc.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio.Misc/Portfolio.Misc.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortfolioProject/Controllers/ContactsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/Controllers/ContactsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject/Models/ErrorViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject/Models/User.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PortfolioProject/PortfolioProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/PortfolioProject.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortfolioProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject/Views/Shared/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/Views/Shared/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PortfolioProject/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PortfolioProject/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +35,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4ac4f52d539aad687ae7c46891e5e1f05ef1de02c729594e388c9e11b7dafa/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Portfolio.Entity/Request.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -103,6 +104,8 @@
       <workItem from="1646302041309" duration="525000" />
       <workItem from="1646472470201" duration="3111000" />
       <workItem from="1646478881090" duration="5407000" />
+      <workItem from="1646750489423" duration="1629000" />
+      <workItem from="1647076114546" duration="6588000" />
     </task>
     <servers />
   </component>

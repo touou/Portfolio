@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Portfolio.DataContext;
 using Portfolio.Misc.Services.EmailSender;
+using Microsoft.AspNetCore.Identity;
+using Portfolio.Entitys;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,8 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddDbContext<ApplicationContext>(option =>
     option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationContext>();
 
 builder.Services.AddControllersWithViews();
 
@@ -34,7 +38,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
