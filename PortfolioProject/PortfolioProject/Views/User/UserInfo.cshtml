@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Portfolio.DataContext
+@inject ApplicationContext _context;
+
+@if (User.Identity.IsAuthenticated){
+    var user = _context.Users.SingleOrDefault(x => x.Email == User.Identity.Name);
+    
+    <p>@user.Name</p>
+    <p>@user.Surname</p>
+    <p>@user.Email</p>
+}
+

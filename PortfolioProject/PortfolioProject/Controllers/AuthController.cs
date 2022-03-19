@@ -34,7 +34,7 @@ public class AuthController : Controller
             {
                 // установка куки
                 await _signInManager.SignInAsync(user, false);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("UserInfo", "User");
             }
             else
             {
@@ -69,7 +69,7 @@ public class AuthController : Controller
                 }
                 else
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("UserInfo", "User");
                 }
             }
             else
