@@ -5,11 +5,7 @@
     <projectFile profileName="IIS Express">PortfolioProject/PortfolioProject.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d83e235c-fce5-4416-a909-0099aa2273e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PortfolioProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PortfolioProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PortfolioProject/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PortfolioProject/Views/Shared/_Layout.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="d83e235c-fce5-4416-a909-0099aa2273e8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +95,7 @@
       <workItem from="1647076114546" duration="7000000" />
       <workItem from="1647086798880" duration="24000" />
       <workItem from="1647242614754" duration="580000" />
-      <workItem from="1647682595221" duration="1088000" />
+      <workItem from="1647682595221" duration="1269000" />
     </task>
     <servers />
   </component>
